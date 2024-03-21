@@ -1,0 +1,48 @@
+/* flexbox */
+.container {
+  height: 400px;
+  background: #ff5d5d;
+  /* trabajar con un contenedor flexible en linea */
+  display: inline-flex;
+  /* trabajar con un contenedor flexible en bloque */
+  display: flex;
+
+  /* flex-direction: direccion de los elementos */
+  /* row (fila, valor por defecto) */
+  flex-direction: row;
+  /* column (columna) */
+  flex-direction: column;
+  /* row-reverse (fila invertida) */
+  flex-direction: row-reverse;
+  /* column-reverse (columna invertida) */
+  flex-direction: column-reverse;
+
+  /* organiza los elementos en horizatal cuando es row y en vertical cuando es column */
+  /* justifica los elementos al principio */
+  justify-content: flex-start;
+  /* justifica los elementos al final */
+  justify-content: flex-end;
+  /* justifica los elementos al centro */
+  justify-content: center;
+  /* justifica los elementos con espacios entre ellos */
+  justify-content: space-between;
+  /* justifica los elementos con espacios entre ellos pero con mas espacio a los margenes */
+  justify-content: space-around;
+  /* justifica los elementos con espacios entre ellos y alrededor de forma equitativa */
+  justify-content: space-evenly;
+
+  /* organiza los elementos en vertical cuando es row y en horintal cuando es column */
+  /* que todos los items ocupen el maximo de alto/ancho posible (por defecto) */
+  align-items: stretch;
+  /* items al principio */
+  align-items: flex-start;
+  /* items al centro */
+  align-items: center;
+  /* items al final */
+  align-items: flex-end;
+}
+
+.titulos {
+  margin: 0;
+  padding: 0;
+}

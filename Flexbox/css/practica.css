@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ejemplo con flex */
+header {
+  background: #ff7c7c;
+  padding: 20px;
+  /* activamos flex */
+  display: flex;
+  /* separamos los elementos */
+  justify-content: space-between;
+  /* alinear verticalmente los elementos */
+  align-items: center;
+}
