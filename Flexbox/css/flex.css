@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 400px;
+  display: flex;
+  background: #ff8f8f;
+
+  /* el wrap es complemento del align content */
+
+  /* multiples filas */
+  /* generar salto de linea cuando se sobrepase el maximo de tamaño (evitando el scroll horizontal) */
+  /* no saltar de linea (por defecto) */
+  flex-wrap: nowrap;
+  /* saltar de linea a la inversa */
+  flex-wrap: wrap-reverse;
+  /* saltar de linea */
+  flex-wrap: wrap;
+
+  /* align content (alinear elemento en vertical en caso de un salto linea) */
+  /* alinea los elementos al principio */
+  align-content: flex-start;
+  /* alinea los elementos al final */
+  align-content: flex-end;
+  /* alinea los elementos al centro */
+  align-content: center;
+  /* alinea los elementos con espacios entre ellos */
+  align-content: space-between;
+  /* alinea los elementos con espacios entre ellos pero con mas espacio a los margenes */
+  align-content: space-around;
+  /* alinea los elementos con espacios entre ellos y alrededor de forma equitativa */
+  align-content: space-evenly;
+}
+
+.container-flex {
+  background: green;
+  display: flex;
+  margin-top: 100px;
+}
+
+.titulo1 {
+  background: red;
+  /* cambia el orden en los elementos hijos */
+  order: 2;
+  /* se expande en base a la cantidad que se le asigne a el y a los elementos hermanos */
+  flex-grow: 1;
+}
+
+.titulo2 {
+  background: yellow;
+  order: 3;
+  flex-grow: 3;
+}
+
+.titulo3 {
+  background: blue;
+  order: 1;
+  flex-grow: 1;
+}
