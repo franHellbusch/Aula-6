@@ -1,0 +1,55 @@
+/* Pseudoclases */
+.button {
+  background-color: #ff4c4c;
+  padding: 15px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  /* transition */
+  transition-duration: 0.3s;
+}
+
+/* hover: mouse sobre el elemento */
+.button:hover {
+  background: #33db33;
+  color: aqua;
+  /* transform (se puede utilizar donde ustedes quieran) */
+  /* scale (escala del elemento) */
+  transform: scale(1.05);
+}
+
+/* active: estamos clickeando el elemento */
+.button:active {
+  background: blue;
+  transform: scale(1.02);
+}
+
+/* focus: input enfocado */
+.inputName:focus {
+  background: red;
+}
+
+/* Pseudoclases (En relacion con otras etiquetas) */
+/* first child (el primer elemento de la etiqueta seleccionada, en relacion al container) */
+.container > h3:first-child {
+  background: red;
+}
+
+/* flast child (el ultimo elemento de la etiqueta seleccionada, en relacion al container) */
+.container > h3:last-child {
+  background: green;
+}
+
+/* nth-child (selecciona un elemento en base a la informacion que se le pase) */
+.container > h3:nth-child(3) {
+  background: yellow;
+}
+
+/* modificando elementos pares e impares */
+.container > h3:nth-child(odd) {
+  background: violet;
+}
+
+.container > h3:nth-child(even) {
+  background: blue;
+}
