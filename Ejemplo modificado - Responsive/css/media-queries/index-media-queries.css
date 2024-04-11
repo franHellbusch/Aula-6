@@ -1,0 +1,108 @@
+@media (max-width: 1200px) {
+  /* header */
+  header {
+    padding: 20px 40px;
+  }
+
+  .header_title_container > h1 {
+    font-size: 28px;
+  }
+
+  .header_navigation {
+    gap: 30px;
+  }
+
+  .header_navigation > a {
+    font-size: 15px;
+  }
+
+  .header_buttons {
+    gap: 30px;
+  }
+
+  /* main */
+  /* presentacion */
+  .presentation {
+    gap: 50px;
+    padding: 70px 20px;
+  }
+
+  .presentation_content > h2 {
+    font-size: 48px;
+  }
+
+  .presentation_content > p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .presentation_content > button {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
+
+  .presentation-image {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* header */
+  header {
+    padding: 15px 25px;
+  }
+
+  .header_title_container > h1 {
+    font-size: 26px;
+  }
+
+  .header_navigation > a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  /* header */
+  .header_navigation,
+  .header_buttons {
+    display: none;
+  }
+
+  .menu-hamburguesa {
+    display: block;
+    width: 35px;
+  }
+
+  /* main */
+  /* presentacion */
+  .presentation {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .presentation-image {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  /* main */
+  /* presentacion */
+  .presentation_content > h2 {
+    font-size: 38px;
+  }
+
+  .presentation_content > p {
+    font-size: 14px;
+  }
+
+  .presentation_content > button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  .presentation-image {
+    width: 60%;
+  }
+}
